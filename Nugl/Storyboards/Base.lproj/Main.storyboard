@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x7g-x8-iBk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="ogW-Hr-qBi">
+            <objects>
+                <viewController id="051-8Y-NCa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="26y-uT-eVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ohy-EI-HEv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="icSearch" id="hTv-zo-Q8E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGp-Ez-1R9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="615"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="b0g-mu-qit">
+            <objects>
+                <viewController id="JdG-vd-N3X" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j8J-Co-P2N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ntJ-23-ZEj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="icHome" id="cdR-uF-lcw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3T-0q-YLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="-79"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0JN-v8-37A">
+            <objects>
+                <tabBarController id="x7g-x8-iBk" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rql-Te-sh3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.068646110590000003" green="0.55692124369999996" blue="0.86710298060000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.068646110590000003" green="0.55692124369999996" blue="0.86710298060000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JdG-vd-N3X" kind="relationship" relationship="viewControllers" id="Iop-HG-Mtm"/>
+                        <segue destination="051-8Y-NCa" kind="relationship" relationship="viewControllers" id="4eT-yw-fwn"/>
+                        <segue destination="eeo-0N-1rE" kind="relationship" relationship="viewControllers" id="0lb-LZ-Qn9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gl4-Tn-0Zb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="236"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="goW-1s-LH0">
+            <objects>
+                <viewController id="eeo-0N-1rE" customClass="ProfileViewController" customModule="Nugl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lp2-eU-W8n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGk-iq-zDz" customClass="FormButton" customModule="Nugl" customModuleProvider="target">
+                                <rect key="frame" x="20" y="562" width="335" height="44"/>
+                                <color key="backgroundColor" red="0.068646110590000003" green="0.55692124369999996" blue="0.86710298060000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GnS-lP-rbW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleSignOutAction:" destination="eeo-0N-1rE" eventType="touchUpInside" id="cca-iE-2uB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kGk-iq-zDz" firstAttribute="centerX" secondItem="lp2-eU-W8n" secondAttribute="centerX" id="5GL-FS-w1v"/>
+                            <constraint firstItem="OLT-KM-NM4" firstAttribute="bottom" secondItem="kGk-iq-zDz" secondAttribute="bottom" constant="12" id="Bgk-Fx-GVa"/>
+                            <constraint firstItem="kGk-iq-zDz" firstAttribute="leading" secondItem="OLT-KM-NM4" secondAttribute="leading" constant="20" id="XrP-Ua-7RK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OLT-KM-NM4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="icAccount" id="VyH-zd-EOs"/>
+                    <connections>
+                        <outlet property="signOutButton" destination="kGk-iq-zDz" id="NrY-5b-6Jd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vPX-Yj-550" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="1318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icAccount" width="20" height="20"/>
+        <image name="icHome" width="20" height="17"/>
+        <image name="icSearch" width="18" height="18"/>
+    </resources>
+</document>

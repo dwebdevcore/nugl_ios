@@ -1,0 +1,6 @@
+framework module Pods_Nugl {
+  umbrella header "Pods-Nugl-umbrella.h"
+
+  export *
+  module * { export * }
+}

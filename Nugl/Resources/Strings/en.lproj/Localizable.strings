@@ -1,0 +1,40 @@
+/* 
+  Strings.strings
+  Nugl
+
+  Created by Diego Pais on 4/29/18.
+  Copyright © 2018 Nugl. All rights reserved.
+*/
+
+"generic.alert.ok" = "OK";
+"generic.alert.cancel" = "Cancel";
+"generic.alert.error.title" = "Error";
+
+"signin.fields.email" = "Email";
+"signin.fields.password" = "Password";
+"signin.buttons.signin" = "Sign In";
+"signin.buttons.signup" = "Sign Up";
+"signin.buttons.recoverPassword" = "Recover it.";
+"signin.labels.forgotpassword" = "Forgot your password?";
+"signin.labels.noaccount" = "Don't have an account?";
+
+"signup.title" = "Sign Up";
+"signup.field.email" = "Email";
+"signup.field.password" = "Password";
+"signup.field.confirmPassword" = "Confirm Password";
+"signup.button.agreeTerms" = "I agree to the";
+"signup.button.openTerms" = "Terms of Service";
+"signup.alert.terms.title" = "Terms of Service";
+"signup.alert.terms.body" = "I understand NUGL.com does not sell or handle marijuana or marijuana products. NUGL is a Software as a Service (SaaS) and directory that does not police licensing and compliance in any given city, state or nation, and it is my responsibility to follow these laws.";
+"signup.errors.mustAgreeTerms" = "You must agree the Terms of Service.";
+"signup.errors.passwordsNotMatch" = "Passwords do not match.";
+"signup.button.signUp" = "Sign Up";
+
+"resetPassword.title" = "Recover Password";
+"resetPassword.label.message" = "Enter your email address and a recovery link will be sent";
+"resetPassword.field.email" = "Email";
+"resetPassword.button.submit" = "Submit";
+"resetPassword.alert.success.title" = "Success";
+"resetPassword.alert.success.body" = "We have sent a recovery link to your email address.";
+
+"profile.button.signout" = "Sign Out";
